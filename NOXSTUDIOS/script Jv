@@ -1,0 +1,20 @@
+// NOXSTUDIO — JavaScript
+
+console.log("NOXSTUDIO iniciado com sucesso!");
+
+const links = document.querySelectorAll(
+    '.navigation a'
+);
+
+links.forEach((link) => {
+
+    link.addEventListener('click', () => {
+
+        console.log(
+            'Navegando para:',
+            link.textContent
+        );
+
+    });
+
+});
